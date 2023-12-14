@@ -24,7 +24,7 @@ $Dark-Grayish-Red: #413a3a;
 body {
     background: $Gradient-one;
     display: grid;
-    @media (min-width: 768px) {
+    @media (min-width: 900px) {
         background: url('images/bg-pattern-desktop.svg');
         background-size: cover;
         background-position: -30vw;
@@ -34,13 +34,13 @@ body {
     }    
     .logo {
         margin: 1.7rem 0 1.7rem 3rem;
-        @media (min-width: 768px) {
+        @media (min-width: 900px) {
             padding-top: 2.5rem;
             grid-area: 1 / 2;
         }
         img {
             width: 100px;
-            @media (min-width: 768px) {
+            @media (min-width: 900px) {
                 width: 160px;
             }
         }
@@ -49,7 +49,7 @@ body {
         background: url('images/hero-mobile.jpg') no-repeat;
         background-size: cover;
         height: 42vh;
-        @media (min-width: 768px) {
+        @media (min-width: 900px) {
             background: url('images/hero-desktop.jpg') no-repeat;
             background-size: cover;
             grid-area: 1 / 3 / 3 / 4;
@@ -62,7 +62,7 @@ body {
         flex-direction: column;
         align-items: center;
         padding: 1.2rem;
-        @media (min-width: 768px) {
+        @media (min-width: 900px) {
             width: 70%;
             align-items: flex-start;
             grid-area: 2 / 2;
@@ -75,7 +75,7 @@ body {
             letter-spacing: 15px;
             line-height: 35px;
             padding: .8rem 0;
-            @media (min-width: 768px) {
+            @media (min-width: 900px) {
                 font-size: 4rem;
                 line-height: 80px;
                 text-align: start;
@@ -90,7 +90,7 @@ body {
             font-size: .8rem;
             color: $Desaturated-Red;
             line-height: 20px;
-            @media (min-width: 768px) {
+            @media (min-width: 900px) {
                 font-size: 1rem;
                 line-height: 30px;
                 text-align: start;
@@ -113,7 +113,7 @@ body {
                 &::placeholder {
                     color: $Desaturated-Red;
                     opacity: .5;
-                    @media (min-width: 768px) {
+                    @media (min-width: 900px) {
                         font-size: 1.1rem;
                     }
                 }
@@ -121,7 +121,7 @@ body {
                     outline: none;
                     border: 2px solid $Desaturated-Red;
                 }
-                @media (min-width: 768px) {
+                @media (min-width: 900px) {
                     padding: 1.2rem 2rem;
                 }
             }
@@ -145,7 +145,7 @@ body {
                     scale: 1.05;
                     background: $Button-hover;
                 }
-                @media (min-width: 768px) {
+                @media (min-width: 900px) {
                     height: 52px;
                     padding: 1rem 3rem;
                     margin-left: 15px;
@@ -160,7 +160,7 @@ body {
             font-size: .9rem;
             padding: .7rem 0 0 1.6rem;
             display: none;
-            @media (min-width: 768px) {
+            @media (min-width: 900px) {
                 padding: .7rem 0 0 2rem;
             }    
         }
