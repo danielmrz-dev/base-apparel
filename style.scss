@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+// Variables
+
+$Josefin-Sans: 'Josefin Sans', sans-serif;
+$Gradient-one: linear-gradient(135deg, #ffffff, #fff5f5);
+$Gradient-two: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+$Desaturated-Red: #ce9797;
+$Button-hover: #f8cfcf;
+$Soft-Red: #f96262;
+$Dark-Grayish-Red: #413a3a;
+
+// Reset
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $Josefin-Sans;
+}
+
+
+// Style
+body {
+    background: $Gradient-one;
+    display: grid;
+    @media (min-width: 768px) {
+        background: url('images/bg-pattern-desktop.svg');
+        background-size: cover;
+        background-position: -30vw;
+        height: 100vh;
+        grid-template-columns:  8% 50% 1fr;
+        grid-template-rows: 18% 1fr;
+    }    
+    .logo {
+        margin: 1.7rem 0 1.7rem 3rem;
+        @media (min-width: 768px) {
+            padding-top: 2.5rem;
+            grid-area: 1 / 2;
+        }
+        img {
+            width: 100px;
+            @media (min-width: 768px) {
+                width: 160px;
+            }
+        }
+    }
+    .hero {
+        background: url('images/hero-mobile.jpg') no-repeat;
+        background-size: cover;
+        height: 42vh;
+        @media (min-width: 768px) {
+            background: url('images/hero-desktop.jpg') no-repeat;
+            background-size: cover;
+            grid-area: 1 / 3 / 3 / 4;
+            height: 100%;
+        }  
+    }
+    .container {
+        margin: 1.7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.2rem;
+        @media (min-width: 768px) {
+            width: 70%;
+            align-items: flex-start;
+            grid-area: 2 / 2;
+        }  
+        .title {
+            color: $Desaturated-Red;
+            font-weight: 300;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 15px;
+            line-height: 35px;
+            padding: .8rem 0;
+            @media (min-width: 768px) {
+                font-size: 4rem;
+                line-height: 80px;
+                text-align: start;
+            }  
+            strong {
+                color: $Dark-Grayish-Red;
+                font-weight: 600;
+            }
+        }
+        .message {
+            text-align: center;
+            font-size: .8rem;
+            color: $Desaturated-Red;
+            line-height: 20px;
+            @media (min-width: 768px) {
+                font-size: 1rem;
+                line-height: 30px;
+                text-align: start;
+                padding: 1rem 0 1.5rem 0;
+            }
+        }
+        .subscribe {
+            width: 100%;
+            padding: 1rem 0 0;   
+            display: flex;
+            position: relative;         
+            input {
+                width: 100%;
+                padding: 1rem 1.5rem;
+                border-radius: 30px;
+                border: 1px solid $Desaturated-Red;
+                background-color: transparent;
+                position: absolute;
+                top: 15.5px;
+                &::placeholder {
+                    color: $Desaturated-Red;
+                    opacity: .5;
+                    @media (min-width: 768px) {
+                        font-size: 1.1rem;
+                    }
+                }
+                &:focus {
+                    outline: none;
+                }
+                @media (min-width: 768px) {
+                    padding: 1.2rem 2rem;
+                }
+            }
+            img#icon-error {
+                align-self: center;
+                margin: 0 0 0 auto;
+                opacity: 0;
+            }
+            button {
+                width: 70px;
+                background: $Gradient-two;
+                padding: .7rem 1.5rem;
+                border-radius: 30px;
+                border: none;
+                margin-left: 10px;
+                box-shadow: 0 1px 15px $Desaturated-Red;
+                z-index: 1;
+                cursor: pointer;
+                &:hover {
+                    transition: linear .1s ease;
+                    scale: 1.05;
+                    background: $Button-hover;
+                }
+                @media (min-width: 768px) {
+                    height: 52px;
+                    padding: 1rem 3rem;
+                    margin-left: 15px;
+                    display: flex;
+                    justify-content: center;
+                }                
+            }
+        }
+        .valid-email {
+            align-self: flex-start;
+            color: $Soft-Red;
+            font-size: .9rem;
+            padding: .7rem 0 0 2rem;
+            display: none;
+        }
+    }
+    footer {
+        display: none;
+    }
+}
