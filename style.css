@@ -172,8 +172,13 @@ body .container .valid-email {
   align-self: flex-start;
   color: #f96262;
   font-size: 0.9rem;
-  padding: 0.7rem 0 0 2rem;
+  padding: 0.7rem 0 0 1.6rem;
   display: none;
+}
+@media (min-width: 768px) {
+  body .container .valid-email {
+    padding: 0.7rem 0 0 2rem;
+  }
 }
 body footer {
   display: none;

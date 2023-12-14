@@ -158,8 +158,11 @@ body {
             align-self: flex-start;
             color: $Soft-Red;
             font-size: .9rem;
-            padding: .7rem 0 0 2rem;
+            padding: .7rem 0 0 1.6rem;
             display: none;
+            @media (min-width: 768px) {
+                padding: .7rem 0 0 2rem;
+            }    
         }
     }
     footer {
