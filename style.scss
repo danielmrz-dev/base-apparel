@@ -30,7 +30,7 @@ body {
         background-position: -30vw;
         height: 100vh;
         grid-template-columns:  8% 50% 1fr;
-        grid-template-rows: 18% 1fr;
+        grid-template-rows: 16% 1fr;
     }    
     .logo {
         margin: 1.7rem 0 1.7rem 3rem;
@@ -119,6 +119,7 @@ body {
                 }
                 &:focus {
                     outline: none;
+                    border: 2px solid $Desaturated-Red;
                 }
                 @media (min-width: 768px) {
                     padding: 1.2rem 2rem;

@@ -17,7 +17,7 @@ body {
     background-position: -30vw;
     height: 100vh;
     grid-template-columns: 8% 50% 1fr;
-    grid-template-rows: 18% 1fr;
+    grid-template-rows: 16% 1fr;
   }
 }
 body .logo {
@@ -131,6 +131,7 @@ body .container .subscribe input::placeholder {
 }
 body .container .subscribe input:focus {
   outline: none;
+  border: 2px solid #ce9797;
 }
 @media (min-width: 768px) {
   body .container .subscribe input {
